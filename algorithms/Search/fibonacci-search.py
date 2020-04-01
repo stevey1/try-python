@@ -24,9 +24,7 @@ def fibMonaccianSearch(arr, x):
     return -1
 
 # Driver Code
-arr = [10, 22, 35, 40, 45, 50,
-       80, 82, 85, 90, 100, 110, 111]
-
-x = 111
-print("Found at index:",
-      fibMonaccianSearch(arr, x))
+if __name__ == "__main__":
+    arr = [10, 22, 35, 40, 45, 50,
+        80, 82, 85, 90, 100, 110, 111]
+    assert(    fibMonaccianSearch(arr, 111),12)
