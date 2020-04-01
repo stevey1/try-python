@@ -4,12 +4,13 @@ def memoize_factorial(f):
     # This inner function has access to memory 
     # and 'f' 
     def inner(num): 
-        print(num)            
+        print("inner",num)            
         if num not in memory:          
-            print('put into memery:',num)            
             memory[num] = f(num) 
+            print("put into",num,memory[num])            
+
         else:
-            print('get from memery:',num)            
+            print('get from memery:',num,memory[num])            
         return memory[num] 
   
     return inner 
@@ -21,6 +22,6 @@ def fibonnacci(n):
         return 0
     if n==1:
         return 1
-    return fibonnacci(n-1)+fibonnacci(n-1)
+    return fibonnacci(n-2)*fibonnacci(n-1)
 
 print(fibonnacci(10))

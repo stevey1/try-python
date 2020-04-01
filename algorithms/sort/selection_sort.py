@@ -5,6 +5,9 @@ def sort(a):
         for j in range(i+1, n):
             if a[j] < a[minIndex]:
                 minIndex = j
-        if i != minIndex:
-            a[i], a[minIndex] = a[minIndex], a[i]
-    return a
+        a[i], a[minIndex] = a[minIndex], a[i]
+
+if __name__ == "__main__":
+    a = ['d', 'a', 'c', 'b']
+    sort(a)
+    assert( a==['a','b','c','d'])
