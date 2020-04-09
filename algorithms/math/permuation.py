@@ -1,4 +1,4 @@
-def per(arr,m):
+def Permutation (arr,m):
     n=len(arr)
     indices=[j+1 for j in range(m)]
     i=m-1
@@ -16,6 +16,6 @@ def per(arr,m):
         indices[i]+=1
 
 if __name__ == "__main__":
-    arr=['a','b','c','d','e']
-    per(arr, 4)
+    arr=['a','b','c','d','e','f','g']
+    Permutation (arr, 3)
     
